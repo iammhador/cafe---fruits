@@ -36,7 +36,7 @@ export default function About() {
             </p>
             <p className="text-gray-600 mb-6">
               Our cozy space is designed to be your home away from home -
-              whether you're catching up with friends, working remotely, or
+              whether you&apos;re catching up with friends, working remotely, or
               simply enjoying a moment of solitude with your favorite beverage.
             </p>
             <div className="flex items-center">

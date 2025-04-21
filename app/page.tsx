@@ -15,10 +15,6 @@ export default function Home() {
           content="Exceptional Coffee & Fresh Juices in the Heart of Paris"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <Hero />

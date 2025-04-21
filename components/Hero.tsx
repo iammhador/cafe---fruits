@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { RiCupLine, RiLeafLine } from "react-icons/ri";
-import bg from "@/assets/generated-image-1745263999385.png";
 export default function Hero() {
   return (
     <section

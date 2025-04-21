@@ -15,7 +15,8 @@ export default function Contact() {
         >
           <h2 className="text-4xl font-bold mb-4">Visit Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We'd love to welcome you to our café. Here's how to find us.
+            We&apos;d love to welcome you to our café. Here&apos;s how to find
+            us.
           </p>
         </motion.div>
 
