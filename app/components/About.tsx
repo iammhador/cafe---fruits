@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { RiLeafLine, RiCupLine, RiHeartLine } from "react-icons/ri";
 import Image from "next/image";
+import ourStoryImage from "@/assets/outStory/image-one.png";
 
 export default function About() {
   const features = [
@@ -58,10 +59,10 @@ export default function About() {
           >
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/cafe-interior.jpg"
+                src={ourStoryImage}
                 alt="Café Interior"
                 fill
-                className="object-cover"
+                className="object-fill"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -73,7 +74,7 @@ export default function About() {
               viewport={{ once: true }}
               className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl"
             >
-              <p className="text-2xl font-bold text-yellow-500">15+</p>
+              <p className="text-2xl font-bold text-yellow-500">3+</p>
               <p className="text-gray-600">Years of Excellence</p>
             </motion.div>
           </motion.div>

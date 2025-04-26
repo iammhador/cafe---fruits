@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Menu() {
   const menuItems = [
@@ -7,37 +8,30 @@ export default function Menu() {
       name: "Coffees",
       description:
         "Expertly crafted coffee beverages using premium roasted beans",
-      image: "/images/coffee-category.jpg",
       items: [
         {
           name: "Espresso",
           description: "Rich and intense single shot of pure coffee",
-          price: "$3.50",
+          price: "€1.80",
           image: "/images/espresso.jpg",
-        },
-        {
-          name: "Café Crème",
-          description: "Smooth and creamy coffee with steamed milk",
-          price: "$4.50",
-          image: "/images/cafe-creme.jpg",
-        },
-        {
-          name: "Cappuccino",
-          description: "Perfect balance of espresso, steamed milk, and foam",
-          price: "$4.75",
-          image: "/images/cappuccino.jpg",
-        },
-        {
-          name: "Café au Lait",
-          description: "Classic French coffee with hot milk",
-          price: "$4.25",
-          image: "/images/cafe-au-lait.jpg",
         },
         {
           name: "Americano",
           description: "Espresso diluted with hot water",
-          price: "$3.75",
+          price: "€2.50",
           image: "/images/americano.jpg",
+        },
+        {
+          name: "Cafe Latte",
+          description: "Espresso with steamed milk and a light layer of foam",
+          price: "€2.80",
+          image: "/images/cafe-au-lait.jpg",
+        },
+        {
+          name: "Cappuccino",
+          description: "Perfect balance of espresso, steamed milk, and foam",
+          price: "€3.00",
+          image: "/images/cappuccino.jpg",
         },
       ],
     },
@@ -47,78 +41,94 @@ export default function Menu() {
       image: "/images/juice-category.jpg",
       items: [
         {
-          name: "Orange Fresh",
+          name: "Orange Fresh Juice",
           description: "Pure squeezed oranges, rich in vitamin C",
-          price: "$5.50",
+          price: "€2.50 - €4.50",
           image: "/images/orange-juice.jpg",
         },
         {
-          name: "Green Detox",
-          description: "Blend of spinach, cucumber, apple, and ginger",
-          price: "$6.50",
+          name: "Pomegranate Juice",
+          description: "Fresh pressed pomegranate juice, naturally sweet",
+          price: "€3.00 - €5.50",
           image: "/images/green-detox.jpg",
         },
         {
-          name: "Berry Blast",
-          description: "Mixed berries packed with antioxidants",
-          price: "$6.75",
+          name: "Lemon Juice",
+          description: "Fresh squeezed lemon juice, perfect refreshment",
+          price: "€2.50 - €5.00",
           image: "/images/berry-blast.jpg",
         },
         {
-          name: "Tropical Mix",
-          description: "Mango, pineapple, and passion fruit blend",
-          price: "$6.25",
-          image: "/images/tropical-mix.jpg",
+          name: "Mango Box",
+          description: "Fresh mango juice box, 500g serving",
+          price: "€4.00",
+          image: "/images/berry-blast.jpg",
         },
         {
-          name: "Carrot Ginger",
-          description: "Fresh carrots with a kick of ginger",
-          price: "$5.75",
-          image: "/images/carrot-ginger.jpg",
+          name: "Watermelon Box",
+          description: "Fresh watermelon juice box, 500g serving",
+          price: "€3.00",
+          image: "/images/berry-blast.jpg",
         },
       ],
     },
     {
-      name: "Pastries",
-      description: "Freshly baked French pastries made in-house daily",
-      image: "/images/pastry-category.jpg",
+      name: "Fresh Fruits",
+      description: "Premium quality fresh fruits, carefully selected daily",
+
       items: [
         {
-          name: "Croissant",
-          description: "Buttery, flaky traditional French croissant",
-          price: "$3.75",
-          image: "/images/croissant.jpg",
+          name: "Seasonal Fresh Fruits",
+          description: "Daily selection of fresh seasonal fruits",
+          image: "/images/fresh-fruits.jpg",
+        },
+      ],
+    },
+    {
+      name: "Premium Nuts",
+      description: "High-quality nuts selection",
+      image: "/images/nuts-category.jpg",
+      items: [
+        {
+          name: "Assorted Nuts",
+          description: "Various premium quality nuts available",
+          image: "/images/nuts-selection.jpg",
+        },
+      ],
+    },
+    {
+      name: "Chocolates & Snacks",
+      description: "Premium chocolates and snacks",
+
+      items: [
+        {
+          name: "Chocolate Selection",
+          description: "Premium chocolate varieties",
+          image: "/images/chocolate-selection.jpg",
         },
         {
-          name: "Pain au Chocolat",
-          description: "Chocolate-filled croissant pastry",
-          price: "$4.25",
-          image: "/images/pain-au-chocolat.jpg",
+          name: "Chips & Snacks",
+          description: "Various chips and snack options",
+          image: "/images/chips-selection.jpg",
         },
+      ],
+    },
+    {
+      name: "Cold Drinks",
+      description: "Refreshing selection of beverages",
+
+      items: [
         {
-          name: "Quiche Lorraine",
-          description: "Classic quiche with bacon and Gruyère cheese",
-          price: "$6.50",
-          image: "/images/quiche-lorraine.jpg",
-        },
-        {
-          name: "Croque Monsieur",
-          description: "Grilled ham and cheese sandwich with béchamel",
-          price: "$7.50",
-          image: "/images/croque-monsieur.jpg",
-        },
-        {
-          name: "Macarons",
-          description: "Delicate almond meringue cookies with filling",
-          price: "$2.50",
-          image: "/images/macarons.jpg",
+          name: "Refreshing Beverages",
+          description: "Selection of cold drinks and refreshments",
+          image: "/images/beverages.jpg",
         },
       ],
     },
   ];
 
   return (
-    <section id="menu" className="py-20 bg-gray-50">
+    <section id="menu" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -127,11 +137,13 @@ export default function Menu() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-4 text-gray-800">Our Menu</h2>
+          <h2 className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-yellow-500">
+            Our Menu
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Discover our selection of artisanal coffees, freshly squeezed
-            juices, and authentic French pastries, crafted with the finest
-            ingredients for an exceptional experience.
+            juices, and premium products, crafted with the finest ingredients
+            for an exceptional experience.
           </p>
         </motion.div>
 
@@ -145,15 +157,8 @@ export default function Menu() {
               viewport={{ once: true }}
             >
               <div className="flex items-center mb-8">
-                <div className="w-24 h-24 rounded-full overflow-hidden mr-6">
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-gray-800">
+                  <h3 className="text-3xl font-bold text-gray-800 bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600">
                     {category.name}
                   </h3>
                   <p className="text-gray-600 mt-2">{category.description}</p>
@@ -164,24 +169,28 @@ export default function Menu() {
                 {category.items.map((item) => (
                   <motion.div
                     key={item.name}
-                    whileHover={{ scale: 1.02 }}
-                    className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    whileHover={{ scale: 1.02, y: -5 }}
+                    className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
                   >
                     <div className="h-48 overflow-hidden">
-                      <img
+                      <Image
+                        width={500}
+                        height={500}
                         src={item.image}
                         alt={item.name}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                       />
                     </div>
                     <div className="p-6">
                       <div className="flex justify-between items-start mb-2">
-                        <h4 className="text-xl font-bold text-gray-800">
+                        <h4 className="text-xl font-bold text-gray-800 hover:text-amber-600 transition-colors duration-300">
                           {item.name}
                         </h4>
-                        <span className="text-lg font-semibold text-emerald-600">
-                          {item.price}
-                        </span>
+                        {"price" in item && (
+                          <span className="text-lg font-semibold text-emerald-600">
+                            {item.price}
+                          </span>
+                        )}
                       </div>
                       <p className="text-gray-600">{item.description}</p>
                     </div>

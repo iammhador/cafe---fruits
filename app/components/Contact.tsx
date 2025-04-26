@@ -27,8 +27,9 @@ export default function Contact() {
             Visit Us
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            We&apos;d love to welcome you to our café. Come experience the
-            perfect blend of coffee and fresh juices in a cozy atmosphere.
+            We warmly invite you to a place where coffee stirs the soul, fresh
+            juices awaken the senses, and every moment feels touched by the
+            spirit of a city built on love.
           </p>
         </motion.div>
 
@@ -74,9 +75,7 @@ export default function Contact() {
                     Opening Hours
                   </h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:30 AM - 8:30 PM
-                    <br />
-                    Saturday - Sunday: 9:00 AM - 7:00 PM
+                    Sunday - Saturday: 8:30 AM - 8:30 PM
                   </p>
                 </div>
               </motion.div>
@@ -141,14 +140,14 @@ export default function Contact() {
             className="relative rounded-2xl overflow-hidden shadow-xl h-[600px]"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214556475547!2d2.3279806!3d48.8657149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e3c844d5635%3A0x5333945415f57ee1!2s123%20Rue%20Saint-Honor%C3%A9%2C%2075001%20Paris%2C%20France!5e0!3m2!1sen!2s!4v1699000000000!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d224.3433214162601!2d2.3520455471102624!3d48.857057359661226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2sbd!4v1745655837557!5m2!1sen!2sbd"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="grayscale hover:grayscale-0 transition-all duration-300"
+              className="grayscale-0 hover:grayscale-50 transition-all duration-300"
             ></iframe>
           </motion.div>
         </div>
