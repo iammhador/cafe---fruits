@@ -1,7 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import Espresso from "@/assets/coffees/espresso.jpg";
+import Americano from "@/assets/coffees/americano.jpg";
+import Latte from "@/assets/coffees/latte.jpg";
+import Cappuccino from "@/assets/coffees/cappuccino.png";
 export default function Menu() {
   const menuItems = [
     {
@@ -13,25 +16,25 @@ export default function Menu() {
           name: "Espresso",
           description: "Rich and intense single shot of pure coffee",
           price: "€1.80",
-          image: "/images/espresso.jpg",
+          image: Espresso,
         },
         {
           name: "Americano",
           description: "Espresso diluted with hot water",
           price: "€2.50",
-          image: "/images/americano.jpg",
+          image: Americano,
         },
         {
           name: "Cafe Latte",
           description: "Espresso with steamed milk and a light layer of foam",
           price: "€2.80",
-          image: "/images/cafe-au-lait.jpg",
+          image: Latte,
         },
         {
           name: "Cappuccino",
           description: "Perfect balance of espresso, steamed milk, and foam",
           price: "€3.00",
-          image: "/images/cappuccino.jpg",
+          image: Cappuccino,
         },
       ],
     },

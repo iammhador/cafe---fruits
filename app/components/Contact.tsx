@@ -5,8 +5,8 @@ import {
   RiTimeLine,
   RiPhoneLine,
   RiMailLine,
-  RiInstagramLine,
-  RiFacebookLine,
+  // RiInstagramLine,
+  // RiFacebookLine,
 } from "react-icons/ri";
 
 export default function Contact() {
@@ -57,7 +57,9 @@ export default function Contact() {
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800 mb-1">Location</h4>
                   <p className="text-gray-600">
-                    123 Rue Saint-Honoré, 75001 Paris, France
+                    Hôtel de Ville 75004 Paris, France
+                    <br />
+                    Metro: Hôtel de Ville (Lines 1, 11)
                   </p>
                 </div>
               </motion.div>
@@ -90,7 +92,7 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
-                  <p className="text-gray-600">+330758595116</p>
+                  <p className="text-gray-600">0758595116</p>
                 </div>
               </motion.div>
 
@@ -104,12 +106,12 @@ export default function Contact() {
                 </div>
                 <div className="ml-4">
                   <h4 className="font-bold text-gray-800 mb-1">Email</h4>
-                  <p className="text-gray-600">info@cafeparisien.com</p>
+                  <p className="text-gray-600">shohagh0191144@gmail.com</p>
                 </div>
               </motion.div>
             </div>
 
-            <div className="mt-8 pt-8 border-t border-gray-100">
+            {/* <div className="mt-8 pt-8 border-t border-gray-100">
               <h4 className="font-bold text-gray-800 mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <motion.a
@@ -129,7 +131,7 @@ export default function Contact() {
                   <RiFacebookLine size={20} className="text-gray-600" />
                 </motion.a>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
