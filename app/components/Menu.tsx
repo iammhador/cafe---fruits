@@ -5,6 +5,17 @@ import Espresso from "@/assets/coffees/espresso.jpg";
 import Americano from "@/assets/coffees/americano.jpg";
 import Latte from "@/assets/coffees/latte.jpg";
 import Cappuccino from "@/assets/coffees/cappuccino.png";
+import Orange from "@/assets/juices/orange.jpg";
+import Pomegranate from "@/assets/juices/pomegranate.jpg";
+import Lemon from "@/assets/juices/lemon.jpg";
+import Mango from "@/assets/juices/mango.jpg";
+import Watermelon from "@/assets/juices/watermelon.jpg";
+import Fruits from "@/assets/fruits/fruits.jpg";
+import Nuts from "@/assets/nuts/nuts.jpg";
+import Chocolates from "@/assets/chocolates/chocolate.jpg";
+import Chips from "@/assets/chocolates/chips.jpg";
+import Drinks from "@/assets/drinks/drinks.jpg";
+
 export default function Menu() {
   const menuItems = [
     {
@@ -47,31 +58,31 @@ export default function Menu() {
           name: "Orange Fresh Juice",
           description: "Pure squeezed oranges, rich in vitamin C",
           price: "€2.50 - €4.50",
-          image: "/images/orange-juice.jpg",
+          image: Orange,
         },
         {
           name: "Pomegranate Juice",
           description: "Fresh pressed pomegranate juice, naturally sweet",
           price: "€3.00 - €5.50",
-          image: "/images/green-detox.jpg",
+          image: Pomegranate,
         },
         {
           name: "Lemon Juice",
           description: "Fresh squeezed lemon juice, perfect refreshment",
           price: "€2.50 - €5.00",
-          image: "/images/berry-blast.jpg",
+          image: Lemon,
         },
         {
           name: "Mango Box",
-          description: "Fresh mango juice box, 500g serving",
+          description: "Fresh mango slice box, 500g serving",
           price: "€4.00",
-          image: "/images/berry-blast.jpg",
+          image: Mango,
         },
         {
           name: "Watermelon Box",
-          description: "Fresh watermelon juice box, 500g serving",
+          description: "Fresh watermelon slice box, 500g serving",
           price: "€3.00",
-          image: "/images/berry-blast.jpg",
+          image: Watermelon,
         },
       ],
     },
@@ -83,7 +94,7 @@ export default function Menu() {
         {
           name: "Seasonal Fresh Fruits",
           description: "Daily selection of fresh seasonal fruits",
-          image: "/images/fresh-fruits.jpg",
+          image: Fruits,
         },
       ],
     },
@@ -95,24 +106,23 @@ export default function Menu() {
         {
           name: "Assorted Nuts",
           description: "Various premium quality nuts available",
-          image: "/images/nuts-selection.jpg",
+          image: Nuts,
         },
       ],
     },
     {
       name: "Chocolates & Snacks",
       description: "Premium chocolates and snacks",
-
       items: [
         {
           name: "Chocolate Selection",
           description: "Premium chocolate varieties",
-          image: "/images/chocolate-selection.jpg",
+          image: Chocolates,
         },
         {
           name: "Chips & Snacks",
           description: "Various chips and snack options",
-          image: "/images/chips-selection.jpg",
+          image: Chips,
         },
       ],
     },
@@ -124,7 +134,7 @@ export default function Menu() {
         {
           name: "Refreshing Beverages",
           description: "Selection of cold drinks and refreshments",
-          image: "/images/beverages.jpg",
+          image: Drinks,
         },
       ],
     },
