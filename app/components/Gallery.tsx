@@ -3,6 +3,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
+import One from "@/assets/gallery/one.jpg";
+import Two from "@/assets/gallery/two.jpg";
+import Three from "@/assets/gallery/three.jpg";
+import Four from "@/assets/gallery/four.jpg";
+import Five from "@/assets/gallery/five.jpg";
+import Six from "@/assets/gallery/six.jpg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -10,59 +16,45 @@ export default function Gallery() {
   const galleryImages = [
     {
       id: 1,
-      src: "/images/cafe-1.jpg",
-      alt: "Café Interior",
-      category: "ambiance",
-      description: "Our cozy interior designed for your comfort",
+      src: One,
+      // alt: "Café Interior",
+      // category: "ambiance",
+      // description: "Our cozy interior designed for your comfort",
     },
     {
       id: 2,
-      src: "/images/coffee-2.jpg",
-      alt: "Coffee Preparation",
-      category: "process",
-      description: "Artisanal coffee brewing at its finest",
+      src: Two,
+      // alt: "Coffee Preparation",
+      // category: "process",
+      // description: "Artisanal coffee brewing at its finest",
     },
     {
       id: 3,
-      src: "/images/juice-1.jpg",
-      alt: "Fresh Juice",
-      category: "drinks",
-      description: "Fresh-pressed juices made daily",
+      src: Four,
+      // alt: "Fresh Juice",
+      // category: "drinks",
+      // description: "Fresh-pressed juices made daily",
     },
     {
       id: 4,
-      src: "/images/pastry-1.jpg",
-      alt: "French Pastries",
-      category: "food",
-      description: "Authentic French pastries baked in-house",
+      src: Five,
+      // alt: "French Pastries",
+      // category: "food",
+      // description: "Authentic French pastries baked in-house",
     },
     {
       id: 5,
-      src: "/images/cafe-2.jpg",
-      alt: "Outdoor Seating",
-      category: "ambiance",
-      description: "Beautiful terrace for outdoor dining",
+      src: Six,
+      // alt: "Outdoor Seating",
+      // category: "ambiance",
+      // description: "Beautiful terrace for outdoor dining",
     },
     {
       id: 6,
-      src: "/images/coffee-1.jpg",
-      alt: "Espresso Shot",
-      category: "drinks",
-      description: "Perfect espresso shots every time",
-    },
-    {
-      id: 7,
-      src: "/images/juice-2.jpg",
-      alt: "Juice Selection",
-      category: "drinks",
-      description: "Wide variety of fresh fruit combinations",
-    },
-    {
-      id: 8,
-      src: "/images/cafe-3.jpg",
-      alt: "Barista at Work",
-      category: "process",
-      description: "Our skilled baristas crafting your perfect drink",
+      src: Three,
+      // alt: "Espresso Shot",
+      // category: "drinks",
+      // description: "Perfect espresso shots every time",
     },
   ];
 
@@ -102,14 +94,15 @@ export default function Gallery() {
             >
               <Image
                 src={img.src}
-                alt={img.alt}
+                alt="Images"
+                // alt={img.alt}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
               />
 
               {/* Overlay with text */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                 <span className="text-yellow-400 text-sm uppercase tracking-wider mb-2">
                   {img.category}
                 </span>
@@ -117,7 +110,7 @@ export default function Gallery() {
                   {img.alt}
                 </h3>
                 <p className="text-gray-200 text-sm">{img.description}</p>
-              </div>
+              </div> */}
             </motion.div>
           ))}
         </div>
