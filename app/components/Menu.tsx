@@ -18,38 +18,7 @@ import Drinks from "@/assets/drinks/drinks.jpg";
 
 export default function Menu() {
   const menuItems = [
-    {
-      name: "Coffees",
-      description:
-        "Expertly crafted coffee beverages using premium roasted beans",
-      items: [
-        {
-          name: "Espresso",
-          description: "Rich and intense single shot of pure coffee",
-          price: "€1.80",
-          image: Espresso,
-        },
-        {
-          name: "Americano",
-          description: "Espresso diluted with hot water",
-          price: "€2.50",
-          image: Americano,
-        },
-        {
-          name: "Cafe Latte",
-          description: "Espresso with steamed milk and a light layer of foam",
-          price: "€2.80",
-          image: Latte,
-        },
-        {
-          name: "Cappuccino",
-          description: "Perfect balance of espresso, steamed milk, and foam",
-          price: "€3.00",
-          image: Cappuccino,
-        },
-      ],
-    },
-    {
+     {
       name: "Fresh Juices",
       description: "Cold-pressed juices made fresh daily with organic fruits",
       image: "/images/juice-category.jpg",
@@ -83,6 +52,37 @@ export default function Menu() {
           description: "Fresh watermelon slice box, 500g serving",
           price: "€3.00",
           image: Watermelon,
+        },
+      ],
+    },
+    {
+      name: "Coffees",
+      description:
+        "Expertly crafted coffee beverages using premium roasted beans",
+      items: [
+        {
+          name: "Espresso",
+          description: "Rich and intense single shot of pure coffee",
+          price: "€1.80",
+          image: Espresso,
+        },
+        {
+          name: "Americano",
+          description: "Espresso diluted with hot water",
+          price: "€2.50",
+          image: Americano,
+        },
+        {
+          name: "Cafe Latte",
+          description: "Espresso with steamed milk and a light layer of foam",
+          price: "€2.80",
+          image: Latte,
+        },
+        {
+          name: "Cappuccino",
+          description: "Perfect balance of espresso, steamed milk, and foam",
+          price: "€3.00",
+          image: Cappuccino,
         },
       ],
     },
